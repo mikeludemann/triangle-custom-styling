@@ -1,0 +1,39 @@
+.top--image {
+	background:red;
+	width: 100vw;
+	height: 100vh;
+  background: url('./assets/mountain.jpg');
+	width: 100vw;
+	height: 100vh;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+}
+
+.bottom--image {
+	-webkit-clip-path: polygon(100vw 0, 0% 100%, 100vw 100vh);
+	clip-path: polygon(100vw 0, 0% 100vh, 100vw 100vh);
+	background: url('./assets/forest.jpeg');
+	width: 100vw;
+	height: 100vh;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:bottom;
+}
+
+body {
+	margin: 0;
+}
+
+div {
+	position: absolute;
+}
+
+.box {
+	position: absolute; 
+	top: 50%; 
+	left: 50%; 
+	transform:translate(-50%, -50%); 
+	text-align: center; color: rgba(255, 255, 255, 0.8); 
+	border: 4px double rgba(0, 0, 0, 0.2)
+}
